@@ -1,0 +1,23 @@
+.NavBar{
+    background-color: white;
+}
+
+.nav-right{
+    justify-content: flex-end;
+}
+nav{
+    background-color: #0872b9;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.Fast-service{
+    margin-bottom: 0px;
+    font-weight: bolder;
+}
+.li-flex{
+    display: flex;
+    margin-bottom: 0px;
+    list-style: none;
+
+}
