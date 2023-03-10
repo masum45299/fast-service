@@ -5,7 +5,8 @@
 .nav-right{
     justify-content: flex-end;
 }
-nav{
+
+.nav-height{
     background-color: #0872b9;
     height: 50px;
     display: flex;
@@ -15,9 +16,22 @@ nav{
     margin-bottom: 0px;
     font-weight: bolder;
 }
+.icon-right{
+    display: flex;
+    justify-content: flex-end;
+
+}
 .li-flex{
     display: flex;
     margin-bottom: 0px;
     list-style: none;
+    margin-left: 20px;
 
+}
+.li-flex li{
+    margin-left: 20px;
+}
+.li-flex li a{
+
+    color: black;
 }

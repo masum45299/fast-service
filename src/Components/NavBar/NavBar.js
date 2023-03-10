@@ -2,38 +2,48 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter,faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter,faFacebookF,faLinkedin,faInstagram} from '@fortawesome/free-brands-svg-icons';
 
 
 import './NavBar.css'
 
 const NavBar = () => {
-    <FontAwesomeIcon icon="fa-brands " />
     return (
         <div>
-            <nav>
+            <nav className='nav-height'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-4'>
                             <p className='Fast-service'>Fast Service</p>
                         </div>
-                        <div className='col-md-8'>
+                        <div className='col-md-8 icon-right'>
                             <ul className='li-flex'>
                                 <li>
-                                <FontAwesomeIcon
+                                <a href='/'><FontAwesomeIcon
                                 icon={faTwitter} 
-                                ></FontAwesomeIcon>
+                                ></FontAwesomeIcon></a>
                                 </li>
                                 <li>
-                                <FontAwesomeIcon
+                                <a href='/'><FontAwesomeIcon
                                 icon={faFacebookF} 
-                                ></FontAwesomeIcon>
+                                ></FontAwesomeIcon></a>
+                                </li>
+                                <li>
+                                <a href='/'><FontAwesomeIcon
+                                icon={faLinkedin} 
+                                ></FontAwesomeIcon></a>
+                                </li>
+                                <li>
+                                <a href='/'><FontAwesomeIcon
+                                icon={faInstagram} 
+                                ></FontAwesomeIcon></a>
                                 </li>
                             </ul>
                             
                         </div>
                     </div>
                 </div>
+               
             </nav>
             <Navbar className='NavBar' expand="lg">
             <Container>
