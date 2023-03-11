@@ -6,8 +6,21 @@ header{
 }
 .header-text{
     text-align: right;
-    padding: 70px 0px;
+    padding: 80px 0px;
     color: white;
+}
+.order-btn{
+    padding: 10px 15px;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: all linear .2s;
+    color: white;
+    font-weight: bold;
+}
+.order-btn:hover{
+    border: 2px solid #0872b9;
+    background-color: #0872b9;
+    transition: all linear .3s;
 }
 @media screen and (max-width:578px) {
     .header-text{
