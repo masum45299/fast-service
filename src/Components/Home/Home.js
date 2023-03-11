@@ -1,4 +1,5 @@
 import React from 'react';
+import About from '../About/About';
 import './Home.css'
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
                        </div>
                     </div>
             </header>
+            <About></About>
             
 
         </div>

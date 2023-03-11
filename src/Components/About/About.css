@@ -1,0 +1,82 @@
+.about{
+    position: relative;
+    margin-bottom: 50px;
+}
+.about::after{
+    position: absolute;
+    width: 65px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 40%;
+}
+.about::before{
+    position: absolute;
+    width: 13px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 48%;
+}
+.about span::after{
+    position: absolute;
+    width: 10px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 50%;
+}
+.about span::before{
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 52%;
+}
+@media screen and (max-width: 578px) {
+    .about::after{
+        position: absolute;
+        width: 52px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 30.5%;
+    }
+    .about::before{
+        position: absolute;
+        width: 10px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 47%;
+    }
+    .about span::after{
+        position: absolute;
+        width: 12px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 51%;
+    }
+    .about span::before{
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 54%;
+    }
+}
+.about-text{
+    display: flex;
+    align-items: center;
+}

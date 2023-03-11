@@ -1,5 +1,5 @@
 header{
-    background: linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.24)), url('./service.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.507)), url('./service.jpg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,6 +7,12 @@ header{
 .header-text{
     text-align: right;
     padding: 70px 0px;
+    color: white;
+}
+@media screen and (max-width:578px) {
+    .header-text{
+        text-align: center;
+    }
 }
 
 
