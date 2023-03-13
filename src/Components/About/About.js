@@ -4,7 +4,7 @@ import Man from './Man.jpg'
 
 const About = () => {
     return (
-        <div className='container mt-5'>
+        <div className='container mt-5 mb-5'>
             <h1 className='text-center about'>ABOUT US <span></span></h1>
             <div className='row'>
                 <div className='col-md-6'>

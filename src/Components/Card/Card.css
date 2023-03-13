@@ -1,0 +1,119 @@
+.Card-flex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width:578px) {
+    .Card-flex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
+
+.Card-flex img{
+    height: 200px;
+}
+.card-box{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.btn-color{
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 1px solid #5bc5f4;
+    background-color: #5bc5f4;
+    transition: all linear .2s;
+}
+.btn-color:hover{
+    color: white;
+    border: 1px solid #0872b9;
+    background-color: #0872b9;
+    transition: all linear .3s;
+}
+
+.service{
+    position: relative;
+    margin-bottom: 50px;
+}
+.service::after{
+    position: absolute;
+    width: 65px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 40%;
+}
+.service::before{
+    position: absolute;
+    width: 13px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 48%;
+}
+.service span::after{
+    position: absolute;
+    width: 10px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 50%;
+}
+.service span::before{
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    content: '';
+    background-color: #0872b9;
+    bottom: -5%;
+    left: 52%;
+}
+@media screen and (max-width: 578px) {
+    .service::after{
+        position: absolute;
+        width: 52px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 30.5%;
+    }
+    .service::before{
+        position: absolute;
+        width: 10px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 47%;
+    }
+    .service span::after{
+        position: absolute;
+        width: 12px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 51%;
+    }
+    .service span::before{
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        content: '';
+        background-color: #0872b9;
+        bottom: -5%;
+        left: 54%;
+    }
+}
+.service-text{
+    display: flex;
+    align-items: center;
+}
