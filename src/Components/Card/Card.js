@@ -15,7 +15,7 @@ const Card = () => {
             <h1 className='text-center service'>Our service <span></span></h1>
 
 
-            <div className='Card-flex'>
+            <div className='Card-flex '>
                 <div className='card-box' >
                     <div className='p-2'>
                         <img src={pic1} className="card-img-top" alt="..."/>
