@@ -17,7 +17,7 @@ const Card = () => {
 
             <div className='Card-flex '>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic1} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -27,7 +27,7 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic2} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -37,7 +37,7 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic3} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -47,7 +47,7 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic4} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -57,7 +57,7 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic5} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -67,7 +67,7 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic6} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -77,7 +77,7 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic7} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
@@ -87,7 +87,7 @@ const Card = () => {
                     </div>
                 </div>
                 <div className='card-box' >
-                    <div className='p-2'>
+                    <div className='p-2 pb-3'>
                         <img src={pic8} className="card-img-top" alt="..."/>
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
