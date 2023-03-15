@@ -1,5 +1,6 @@
 import React from 'react';
 import service from './service.jpg';
+import service2 from './service2.jpg'
 
 
 const Slider = () => {
@@ -8,7 +9,7 @@ const Slider = () => {
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={service} height='75%vh' className="d-block w-100" alt="..."/>
+                    <img src={service2} height='75%vh' className="d-block w-100" alt="..."/>
                 </div>
                 <div className="carousel-item">
                     <img src={service} height='75%vh' className="d-block w-100" alt="..."/>
