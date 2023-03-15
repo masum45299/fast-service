@@ -1,26 +1,35 @@
 section{
     background-color: #353535;
+    
 }
 .icon-bg{
-    border: 2px solid #5bc5f4;
-    border-radius: 50%;
-    background-color: #5bc5f4;
     padding: 8px;
+    border-radius: 50%;
+    background-color: #0872b9;
+    margin-bottom: 15px;
 }
 .phone{
     color: white;
-    border-radius: 50%;
-    font-size: 15px;
+    height: 15px;
+    width: 15px;
+    
     
 }
-.icone-flex p{
-    margin-bottom: 0px;
-}
+
 .icone-flex{
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
+}
+.icone-flex a{
+    color: white;
+    text-decoration: none;
 }
 .font-size{
     font-size: 13px;
+}
+.importan-link a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
 }

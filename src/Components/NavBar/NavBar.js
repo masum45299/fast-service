@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './logo.png'
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,45 +12,49 @@ import './NavBar.css'
 const NavBar = () => {
     return (
         <div>
-            <nav className='nav-height'>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-md-4'>
-                            <p className='Fast-service'>Fast Service</p>
-                        </div>
-                        <div className='col-md-8 icon-right'>
-                            <ul className='li-flex'>
-                                <li>
-                                <a href='/'><FontAwesomeIcon
-                                icon={faTwitter} 
-                                ></FontAwesomeIcon></a>
-                                </li>
-                                <li>
-                                <a href='/'><FontAwesomeIcon
-                                icon={faFacebookF} 
-                                ></FontAwesomeIcon></a>
-                                </li>
-                                <li>
-                                <a href='/'><FontAwesomeIcon
-                                icon={faLinkedin} 
-                                ></FontAwesomeIcon></a>
-                                </li>
-                                <li>
-                                <a href='/'><FontAwesomeIcon
-                                icon={faInstagram} 
-                                ></FontAwesomeIcon></a>
-                                </li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-               
-            </nav>
-            
+            <Navbar className='NavBar align-items-center nav-height' expand="lg">
+            <Container>
+            <Navbar.Brand as={Link} to='/Home'>Fast Service</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse className='nav-right' id="basic-navbar-nav">
+            <Nav>
+                
+                <NavLink as={Link} to='/'
+                ><FontAwesomeIcon
+                icon={faFacebookF} 
+                ></FontAwesomeIcon></NavLink>
+
+                
+                <NavLink as={Link} to='/'
+                ><FontAwesomeIcon
+                icon={faInstagram} 
+                ></FontAwesomeIcon></NavLink>
+
+
+                <NavLink as={Link} to='/'
+                ><FontAwesomeIcon
+                icon={faTwitter} 
+                ></FontAwesomeIcon></NavLink>
+
+                
+                <NavLink as={Link} to='/'
+                ><FontAwesomeIcon
+                icon={faLinkedin} 
+                ></FontAwesomeIcon></NavLink>
+
+
+            </Nav>
+            </Navbar.Collapse>
+            </Container>
+            </Navbar>
+
+
+
+
+
             <Navbar className='NavBar align-items-center' expand="lg">
             <Container>
-            <Navbar.Brand as={Link} to='/Home'>Logo</Navbar.Brand>
+            <Navbar.Brand as={Link} to='/Home'><img src={logo} width='70px' height='70px' alt='logo'></img></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className='nav-right' id="basic-navbar-nav">
             <Nav>
@@ -62,14 +67,14 @@ const NavBar = () => {
 
                 
                 <NavLink  as={Link} to='/About'
-                className={({ isActive, isPending }) =>
+                className={({ isActive }) =>
                  isActive ? "isActive" : ""
                 }
                 >About</NavLink>
 
                 
                 <NavLink  as={Link} to='/Service'
-                className={({ isActive, isPending }) =>
+                className={({ isActive }) =>
                 isActive ? "isActive" : ""
                 }
                 >Service</NavLink>
