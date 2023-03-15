@@ -2,6 +2,7 @@ import React from 'react';
 import About from '../About/About';
 import Card from '../Card/Card';
 import Section from '../Section/Section';
+import Slider from '../Slider/Slider';
 import './Home.css'
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
                        </div>
                     </div>
             </header>
-            <About></About>
+            <Slider></Slider>
             <Card></Card>
             <Section></Section>
 

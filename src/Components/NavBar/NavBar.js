@@ -52,7 +52,11 @@ const NavBar = () => {
             <Navbar.Collapse className='nav-right' id="basic-navbar-nav">
             <Nav>
                 <Nav.Link as={Link} to='/Home'>Home</Nav.Link>
-                <Nav.Link as={Link} to='/About'>About</Nav.Link>
+
+
+                {/* <Nav.Link as={Link} to='/About'>About</Nav.Link> */}
+
+                
                 <Nav.Link as={Link} to='/Service'>Service</Nav.Link>
             </Nav>
             </Navbar.Collapse>
