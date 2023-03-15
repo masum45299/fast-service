@@ -14,7 +14,7 @@ function App() {
       {path:'/Home', element: <Home></Home>},
       {path:'/About', element: <About></About>},
       {path:'/Service', element: <Card></Card>},
-    ]}
+    ]},
   ])
   return (
     <div className="App">

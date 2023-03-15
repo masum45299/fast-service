@@ -35,3 +35,20 @@
 
     color: white;
 }
+.navbar-nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+    padding: 6px 15px;
+}
+.navbar-nav a:hover{
+    color: red;
+}
+.isActive{
+    background-color: #0872b9;
+    padding: 6px 15px;
+   color: white;
+}
+.isActive a{
+    color: white;
+}

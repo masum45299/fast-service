@@ -7,11 +7,14 @@ import pic4 from './pic4.jpg';
 import pic5 from './pic5.jpg';
 import pic6 from './pic6.jpg';
 import pic7 from './pi7.jpg';
-import pic8 from './pic8.jpg'
+import pic8 from './pic8.jpg';
+import {  Nav  } from 'react-bootstrap';
+import {  Link, NavLink } from 'react-router-dom';
+
 
 const Card = () => {
     return (
-        <div className='container mb-5 '>
+        <div className='container mb-5  '>
             <h1 className='text-center service'>Our service <span></span></h1>
 
 
@@ -22,7 +25,10 @@ const Card = () => {
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className=" btn-color">Order Now</a>
+
+                        {/* <NavLink to={"/About"} className=" btn-color">About</NavLink> */}
+
+                        <Link to={"/About"} className="btn-color"> About</Link>
                         </div>
                     </div>
                 </div>
@@ -32,7 +38,7 @@ const Card = () => {
                         <div className="card-body">
                         <h5 className="card-title">Card title</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className="btn-color">Order Now</a>
+                        <Link to={"/About"} className="btn-color"> About</Link>
                         </div>
                     </div>
                 </div>

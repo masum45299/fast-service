@@ -1,34 +1,64 @@
-import React from 'react';
-import service from './service.jpg';
-import service2 from './service2.jpg'
+import React, { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import Container from 'react-bootstrap/Container';
+import './Slider.css'
+import service3 from './service3.jpg';
+import service4 from './service4.jpg';
+import service5 from './service5.jpg'
 
 
-const Slider = () => {
-    return (
-        <div className='container'>
-        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src={service2} height='75%vh' className="d-block w-100" alt="..."/>
-                </div>
-                <div className="carousel-item">
-                    <img src={service} height='75%vh' className="d-block w-100" alt="..."/>
-                </div>
-                <div className="carousel-item">
-                    <img src={service} height='75%vh' className="d-block w-100" alt="..."/>
-                </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
+function Slider() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+      <div>
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel.Item>
+            <img
+            className="d-block height w-100"
+            src={service3}
+            alt="First slide"
+            />
+            <Carousel.Caption>
+            <h1>One Place All Service</h1>
+            <h3>বাংলাদেশের একটি অন্যতম</h3>
+            <h3>SERVICE PLATEFORM</h3>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block height w-100"
+            src={service4}
+            alt="Second slide"
+            />
+
+            <Carousel.Caption>
+            <h1>One Place All Service</h1>
+            <h3>বাংলাদেশের একটি অন্যতম</h3>
+            <h3>SERVICE PLATEFORM</h3>
+            </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+            className="d-block height w-100"
+            src={service5}
+            alt="Third slide"
+            />
+
+            <Carousel.Caption>
+            <h1>One Place All Service</h1>
+            <h3>বাংলাদেশের একটি অন্যতম</h3>
+            <h3>SERVICE PLATEFORM</h3>
+            </Carousel.Caption>
+        </Carousel.Item>
+        </Carousel>
         </div>
-        </div>
-    );
-};
+    
+  );
+}
 
 export default Slider;

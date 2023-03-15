@@ -8,7 +8,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-            <header>
+            {/* <header>
                     <div className='container'>
                        <div className='row'> 
                             <div className='col-md-6'>
@@ -24,8 +24,11 @@ const Home = () => {
                             </div>
                        </div>
                     </div>
-            </header>
+            </header> */}
             <Slider></Slider>
+        {/*  
+            <About></About>
+        */}
             <Card></Card>
             <Section></Section>
 
