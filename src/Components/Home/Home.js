@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../About/About';
 import Card from '../Card/Card';
+import Footer from '../Footer/Footer';
 import Section from '../Section/Section';
 import Slider from '../Slider/Slider';
 import './Home.css'
@@ -31,6 +32,7 @@ const Home = () => {
         */}
             <Card></Card>
             <Section></Section>
+            <Footer></Footer>
 
         </div>
     );
