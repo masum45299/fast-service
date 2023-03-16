@@ -83,7 +83,7 @@ const Section = () => {
                                 <img className='section-img' src={section3} alt='section3'></img>
                             </div>
                             <div className='col-md-6'>
-                                <img className='section-img' src={section3} alt='section3'></img>
+                                <img className='section-img' src={section4} alt='section3'></img>
                             </div>
 
                         </div>
