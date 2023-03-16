@@ -4,6 +4,13 @@ import { faPhone,faEnvelope ,faLocationDot,faGlobe} from '@fortawesome/free-soli
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import './Section.css'
 import { Link } from 'react-router-dom';
+import section1 from './section1.jpg';
+import section2 from './section2.jpg';
+import section3 from './section3.jpg';
+import section4 from './section4.jpg';
+import section5 from './section5.jpg';
+import section6 from './section6.jpg';
+
 
 const Section = () => {
     return (
@@ -65,6 +72,21 @@ const Section = () => {
                     </div>
                     <div className='col-md-4'>
                         <p className='mb-5 fw-bold font-size'>Fliker Photo</p>
+                        <div className='row'>
+                            <div className='col-md-6'>
+                                <img className='section-img' src={section1} alt='section1'></img>
+                            </div>
+                            <div className='col-md-6'>
+                                <img className='section-img' src={section2} alt='section2'></img>
+                            </div>
+                            <div className='col-md-6'>
+                                <img className='section-img' src={section3} alt='section3'></img>
+                            </div>
+                            <div className='col-md-6'>
+                                <img className='section-img' src={section3} alt='section3'></img>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

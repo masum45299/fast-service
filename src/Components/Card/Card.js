@@ -10,95 +10,100 @@ import pic7 from './pi7.jpg';
 import pic8 from './pic8.jpg';
 import {  Nav  } from 'react-bootstrap';
 import {  Link, NavLink } from 'react-router-dom';
+import Section from '../Section/Section';
+import Footer from '../Footer/Footer';
 
 
 const Card = () => {
     return (
-        <div className='container mb-5  '>
-            <h1 className='text-center service'>Our service <span></span></h1>
+        <div>
+            <div className='container mb-5  '>
+                <h1 className='text-center service'>Our service <span></span></h1>
 
 
-            <div className='Card-flex '>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic1} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div className='Card-flex '>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic1} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-                        {/* <NavLink to={"/About"} className=" btn-color">About</NavLink> */}
+                            {/* <NavLink to={"/About"} className=" btn-color">About</NavLink> */}
 
-                        <Link to={"/About"} className="btn-color"> About</Link>
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic2} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <Link to={"/About"} className="btn-color"> About</Link>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic2} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic3} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className="btn-color">Order Now</a>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic3} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic4} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className="btn-color">Order Now</a>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic4} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic5} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className="btn-color">Order Now</a>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic5} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic6} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className="btn-color">Order Now</a>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic6} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic7} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className="btn-color">Order Now</a>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic7} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='card-box' >
-                    <div className='p-2 pb-3'>
-                        <img src={pic8} className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/" className="btn-color">Order Now</a>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic8} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="/" className="btn-color">Order Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
