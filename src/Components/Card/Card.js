@@ -21,6 +21,11 @@ const myObject = {
     age: 30,
     gender: "male"
   };
+const myObject2 = {
+    name: "Masum",
+    age: 30,
+    gender: "male"
+  };
 
 const Card = () => {
 
@@ -39,18 +44,7 @@ const Card = () => {
             <div className='container mb-5  '>
                 <h1 className='text-center service'>Our service <span></span></h1>
 
-
-                <div className='Card-flex '>
-                    <div className='card-box' >
-                        <div className='p-2 pb-3'>
-                            <img src={pic1} className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-
-                            <Button  className="btn-color" onClick={()=>click(myObject)}>Launch</Button>
-                            <Offcanvas show={showMenu} onHide={handleClose}>
+                <Offcanvas show={showMenu} onHide={handleClose}>
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title>Menu</Offcanvas.Title>
                             </Offcanvas.Header>
@@ -66,6 +60,34 @@ const Card = () => {
 
 
 
+                <div className='Card-flex '>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={pic1} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h5 className="card-title">Card title</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+                            <Button  className="btn-color" onClick={()=>click(myObject)}>Launch</Button>
+
+
+                            {/* <Offcanvas show={showMenu} onHide={handleClose}>
+                            <Offcanvas.Header closeButton>
+                                <Offcanvas.Title>Menu</Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body>
+                                <div>
+                                    
+                                    <p>{selectedItem.name}</p>
+                                </div>
+                             
+                              
+                            </Offcanvas.Body>
+                            </Offcanvas> */}
+
+
+
 
                             </div>
                         </div>
@@ -77,7 +99,7 @@ const Card = () => {
                             <h5 className="card-title">Card title</h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             
-                            <Button  className="btn-color" onClick={()=>click(5)}>Launch</Button>
+                            <Button  className="btn-color" onClick={()=>click(myObject2)}>Launch</Button>
                             </div>
                         </div>
                     </div>
