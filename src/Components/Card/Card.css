@@ -115,6 +115,12 @@
     }
 }
 .service-text{
-    display: flex;
-    align-items: center;
+    color: grey;
+}
+.card-text{
+    font-weight: bold;
+    
+}
+.money{
+    color: rgb(141, 199, 54);
 }
