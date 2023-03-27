@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const Details = (id) => {
-    console.log(id)
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);

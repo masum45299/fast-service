@@ -8,32 +8,38 @@ import pic5 from './pic5.jpg';
 import pic6 from './pic6.jpg';
 import pic7 from './pi7.jpg';
 import pic8 from './pic8.jpg';
-import {  Button, Nav  } from 'react-bootstrap';
-import {  Link, NavLink } from 'react-router-dom';
-import Section from '../Section/Section';
-import Footer from '../Footer/Footer';
+import {  Button} from 'react-bootstrap';
+
 
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Details from '../Details/Details';
 
-const myObject = {
-    name: "John",
-    age: 30,
-    gender: "male"
-  };
-const myObject2 = {
-    name: "Masum",
-    age: 30,
-    gender: "male"
-  };
+
+const myObject=
+    {   
+        id:1,
+        name:"John",
+        age:30,
+        gender:"male"
+      };
+
+const myObject2=
+    {
+        id : 2,
+        name:"Masum",
+        age:30,
+        gender:"male"
+      }
+
 
 const Card = () => {
 
 
-    const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem, setSelectedItem] = useState({});
     const [showMenu, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    console.log(selectedItem.name)
     const click=(id)=>{
         setSelectedItem(id)
         handleShow()
@@ -43,22 +49,6 @@ const Card = () => {
         <div>
             <div className='container mb-5  '>
                 <h1 className='text-center service'>Our service <span></span></h1>
-
-                <Offcanvas show={showMenu} onHide={handleClose}>
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>Menu</Offcanvas.Title>
-                            </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                <div>
-                                    
-                                    <p>{selectedItem.name}</p>
-                                </div>
-                             
-                              
-                            </Offcanvas.Body>
-                            </Offcanvas>
-
-
 
                 <div className='Card-flex '>
                     <div className='card-box' >
@@ -72,19 +62,16 @@ const Card = () => {
                             <Button  className="btn-color" onClick={()=>click(myObject)}>Launch</Button>
 
 
-                            {/* <Offcanvas show={showMenu} onHide={handleClose}>
+                            <Offcanvas show={showMenu} onHide={handleClose}>
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title>Menu</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <div>
-                                    
-                                    <p>{selectedItem.name}</p>
-                                </div>
-                             
-                              
+                                    <div>
+                                        <p>{selectedItem.name}</p>
+                                    </div>
                             </Offcanvas.Body>
-                            </Offcanvas> */}
+                            </Offcanvas>
 
 
 
