@@ -50,6 +50,19 @@ const Card = () => {
             <div className='container mb-5  '>
                 <h1 className='text-center service'>Our service <span></span></h1>
 
+                <Offcanvas show={showMenu} onHide={handleClose}>
+                            <Offcanvas.Header closeButton>
+                                <Offcanvas.Title>Menu</Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body>
+                                    <div>
+                                        <p>{selectedItem.name}</p>
+                                        <p>{selectedItem.age}</p>
+                                    </div>
+                            </Offcanvas.Body>
+                </Offcanvas>
+
+
                 <div className='Card-flex '>
                     <div className='card-box' >
                         <div className='p-2 pb-3'>
@@ -62,16 +75,7 @@ const Card = () => {
                             <Button  className="btn-color" onClick={()=>click(myObject)}>Launch</Button>
 
 
-                            <Offcanvas show={showMenu} onHide={handleClose}>
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>Menu</Offcanvas.Title>
-                            </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                    <div>
-                                        <p>{selectedItem.name}</p>
-                                    </div>
-                            </Offcanvas.Body>
-                            </Offcanvas>
+
 
 
 
