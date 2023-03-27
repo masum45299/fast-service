@@ -5,6 +5,7 @@ import Main from './Components/Main/Main';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Card from './Components/Card/Card';
+import Details from './Components/Details/Details';
 
 function App() {
   const router=createBrowserRouter([

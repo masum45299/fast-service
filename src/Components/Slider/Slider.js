@@ -4,7 +4,8 @@ import Container from 'react-bootstrap/Container';
 import './Slider.css'
 import service3 from './service3.jpg';
 import service4 from './service4.jpg';
-import service5 from './service5.jpg'
+import service5 from './service5.jpg';
+import banner from './home-banner.jpg'
 
 
 function Slider() {
@@ -20,7 +21,7 @@ function Slider() {
         <Carousel.Item>
             <img
             className="d-block height w-100"
-            src={service3}
+            src={banner}
             alt="First slide"
             />
             <Carousel.Caption>
