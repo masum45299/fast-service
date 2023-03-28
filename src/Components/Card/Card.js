@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Card.css';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import sc from './sc-servicing.jpg';
-import acInstall from './Picsart3.jpg'
+import acInstall from './Picsart3.jpg';
+import asBasic from './AC-Basic-Service.png';
 
 
 
@@ -49,6 +50,7 @@ const Card = () => {
                             <Offcanvas.Body>
                                     <div>
                                         <p>{selectedItem.name}</p>
+                                        
                                        
                                     </div>
                             </Offcanvas.Body>
@@ -61,7 +63,7 @@ const Card = () => {
                         <div className='p-2 pb-3'>
                             <img src={sc} className="card-img-top" alt="..."/>
                             <div className="card-body">
-                            <h5 className="card-title">1.5 ton AC servicing</h5>
+                            <h6 className="card-title">1.5 ton AC servicing</h6>
                             <p className='service-text' >Services, AC Fixing</p>
                             <p className="card-text"> <del>৳ 800.00</del>&nbsp;&nbsp; <span className='money'>৳ 500.00</span></p>
                             <button  className="btn-color" onClick={()=>click(details1)}>Details</button>
@@ -72,10 +74,21 @@ const Card = () => {
                         <div className='p-2 pb-3'>
                             <img src={acInstall} className="card-img-top" alt="..."/>
                             <div className="card-body">
-                            <h5 className="card-title">AC Re Installation</h5>
+                            <h6 className="card-title">AC Re Installation</h6>
                             <p className='service-text' >AC Installation</p>
                             <p className="card-text"> <del>৳ 4,000.00</del>&nbsp;&nbsp; <span className='money'>৳ 2,795.00</span></p>
-                            <button  className="btn-color" onClick={()=>click(details1)}>Details</button>
+                            <button  className="btn-color" onClick={()=>click(details2)}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={asBasic} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h6 className="card-title">AC Basic Service 1 To 1.5 Ton</h6>
+                            <p className='service-text' >Services, AC Fixing</p>
+                            <p className="card-text"> <del>৳ 700.00</del>&nbsp;&nbsp; <span className='money'>৳ 500.00</span></p>
+                            <button  className="btn-color" onClick={()=>click(details2)}>Details</button>
                             </div>
                         </div>
                     </div>

@@ -18,6 +18,7 @@
 .card-box{
     border: 2px solid gray;
     border-radius: 5px;
+  
 }
 .btn-color{
     padding: 6px 12px;
@@ -27,6 +28,7 @@
     border: 1px solid #5bc5f4;
     background-color: #5bc5f4;
     transition: all linear .2s;
+   
 }
 .btn-color:hover{
     color: white;
@@ -116,6 +118,7 @@
 }
 .service-text{
     color: grey;
+    margin-bottom: 2px;
 }
 .card-text{
     font-weight: bold;
@@ -123,4 +126,7 @@
 }
 .money{
     color: rgb(141, 199, 54);
+}
+.card-title{
+    font-weight: bold;
 }
