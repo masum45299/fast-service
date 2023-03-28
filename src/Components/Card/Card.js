@@ -12,15 +12,25 @@ const details1=
     {
         id : 1,
         name:"1.5 ton AC servicing",
+        service:"Services, AC Fixing",
         price:"৳ 500.00",
-        gender:"male"
       };
 const details2=
     {
         id : 2,
         name:"AC Re Installation",
+        service:"AC Installation",
+        extra1:"✅দক্ষ টেকনিশিয়ান",
+        price:"৳ 2,795.00",
+
+      };
+const details3=
+    {
+        id : 3,
+        name:"AC Basic Service 1 To 1.5 Ton",
+        service:"Services, AC Fixing, AC Basic Service",
         price:"৳ 500.00",
-        gender:"male"
+        Categories: "AC Basic Service, AC Fixing, Services",
       };
 
 
@@ -45,11 +55,13 @@ const Card = () => {
 
                 <Offcanvas show={showMenu} onHide={handleClose}>
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>Menu</Offcanvas.Title>
+                                <Offcanvas.Title>Details</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                     <div>
-                                        <p>{selectedItem.name}</p>
+                                        <h4>{selectedItem.name}</h4>
+                                        <p className='service-text'>{selectedItem.service}</p>
+                                        <p className='money card-text'>{selectedItem.price}</p>
                                         
                                        
                                     </div>
@@ -88,7 +100,7 @@ const Card = () => {
                             <h6 className="card-title">AC Basic Service 1 To 1.5 Ton</h6>
                             <p className='service-text' >Services, AC Fixing</p>
                             <p className="card-text"> <del>৳ 700.00</del>&nbsp;&nbsp; <span className='money'>৳ 500.00</span></p>
-                            <button  className="btn-color" onClick={()=>click(details2)}>Details</button>
+                            <button  className="btn-color" onClick={()=>click(details3)}>Details</button>
                             </div>
                         </div>
                     </div>
