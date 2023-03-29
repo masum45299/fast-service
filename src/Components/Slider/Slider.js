@@ -19,11 +19,8 @@ function Slider() {
       <div>
         <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-            <img
-            className="d-block height w-100"
-            src={banner}
-            alt="First slide"
-            />
+           
+            <div  className='background-img'></div>
             <Carousel.Caption>
             <h1>One Place All Service</h1>
             <h3>বাংলাদেশের একটি অন্যতম</h3>
@@ -31,12 +28,7 @@ function Slider() {
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img
-            className="d-block height w-100"
-            src={service4}
-            alt="Second slide"
-            />
-
+            <div  className='background-img'></div>
             <Carousel.Caption>
             <h1>One Place All Service</h1>
             <h3>বাংলাদেশের একটি অন্যতম</h3>
@@ -44,12 +36,7 @@ function Slider() {
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img
-            className="d-block height w-100"
-            src={service5}
-            alt="Third slide"
-            />
-
+            <div  className='background-img'></div>
             <Carousel.Caption>
             <h1>One Place All Service</h1>
             <h3>বাংলাদেশের একটি অন্যতম</h3>

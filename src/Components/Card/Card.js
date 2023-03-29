@@ -290,9 +290,8 @@ const Card = () => {
                                         <span>{selectedItem.extra1}</span><br></br>
                                         <span>{selectedItem.extra2}</span><br></br>
                                         <span>{selectedItem.extra3}</span><br></br>
-                                        <span>{selectedItem.extra4}</span><br></br>
-                                        
-                                       
+                                        <span>{selectedItem.extra4}</span><br></br><br></br>
+                                        <button  className="btn-color" >Order Now</button>
                                     </div>
                             </Offcanvas.Body>
                 </Offcanvas>
