@@ -9,6 +9,9 @@ import acGas from './AC-Gas-Recharge.png';
 import refrigerator from './Refrigerator-Fixing.png';
 import jetwash from './Jet Wash.jpg';
 import shifting from './AC-Shifting-.png';
+import water from './AC-Watr-07.png';
+import acrefil from './Picsart2.jpg';
+import micro from './Micro.png';
 
 
 
@@ -176,6 +179,78 @@ const details14=
         name:"AC Shifting 4 To 5 Ton",
         service:"Services, AC Fixing, AC Shifting",
         price:"৳ 3,500.00",
+        Categories: "AC Basic Service, AC Fixing, Services",
+        extra1:"✅দক্ষ টেকনিশিয়ান",
+        extra2:"✅7 দিনের সার্ভিস ওয়ারেন্টি",
+        extra3:"✅বেস্ট কোয়ালিটি",
+        extra4:"✅প্রতি সার্ভিসে ডিসকাউন্ট",
+      };
+const details15=
+    {
+        id : 15,
+        name:"AC Uninstallation 1 To 2Ton",
+        service:"Services, AC Fixing, AC uninstallation",
+        price:"৳ 1,500.00",
+        Categories: "AC Basic Service, AC Fixing, Services",
+        extra1:"✅দক্ষ টেকনিশিয়ান",
+        extra2:"✅7 দিনের সার্ভিস ওয়ারেন্টি",
+        extra3:"✅বেস্ট কোয়ালিটি",
+        extra4:"✅প্রতি সার্ভিসে ডিসকাউন্ট",
+      };
+const details16=
+    {
+        id : 16,
+        name:"AC Uninstallation 3 To 5Ton",
+        service:"Services, AC Fixing, AC uninstallation",
+        price:" ৳ 2,000.00",
+        Categories: "AC Basic Service, AC Fixing, Services",
+        extra1:"✅দক্ষ টেকনিশিয়ান",
+        extra2:"✅7 দিনের সার্ভিস ওয়ারেন্টি",
+        extra3:"✅বেস্ট কোয়ালিটি",
+        extra4:"✅প্রতি সার্ভিসে ডিসকাউন্ট",
+      };
+const details17=
+    {
+        id : 17,
+        name:"AC Water Drop Solution 1 To 2 Ton",
+        service:"Services, AC Fixing, AC Water Leakage Solution",
+        price:" ৳ 700.00",
+        Categories: "AC Basic Service, AC Fixing, Services",
+        extra1:"✅দক্ষ টেকনিশিয়ান",
+        extra2:"✅7 দিনের সার্ভিস ওয়ারেন্টি",
+        extra3:"✅বেস্ট কোয়ালিটি",
+        extra4:"✅প্রতি সার্ভিসে ডিসকাউন্ট",
+      };
+const details18=
+    {
+        id : 18,
+        name:"AC Water Drop Solution 3 To 5 Ton",
+        service:"Services, AC Fixing, AC Water Leakage Solution",
+        price:" ৳ 1,000.00",
+        Categories: "AC Basic Service, AC Fixing, Services",
+        extra1:"✅দক্ষ টেকনিশিয়ান",
+        extra2:"✅7 দিনের সার্ভিস ওয়ারেন্টি",
+        extra3:"✅বেস্ট কোয়ালিটি",
+        extra4:"✅প্রতি সার্ভিসে ডিসকাউন্ট",
+      };
+const details19=
+    {
+        id : 19,
+        name:"Gas Charging",
+        service:"AC Gas Recharge",
+        price:"৳ 1,795.00",
+        Categories: "AC Basic Service, AC Fixing, Services",
+        extra1:"✅দক্ষ টেকনিশিয়ান",
+        extra2:"✅7 দিনের সার্ভিস ওয়ারেন্টি",
+        extra3:"✅বেস্ট কোয়ালিটি",
+        extra4:"✅প্রতি সার্ভিসে ডিসকাউন্ট",
+      };
+const details20=
+    {
+        id : 20,
+        name:"Microwave Oven Fixing Service",
+        service:"Services, Oven Fixing",
+        price:"৳ 500.00",
         Categories: "AC Basic Service, AC Fixing, Services",
         extra1:"✅দক্ষ টেকনিশিয়ান",
         extra2:"✅7 দিনের সার্ভিস ওয়ারেন্টি",
@@ -376,6 +451,72 @@ const Card = () => {
                             <p className='service-text' >Services, AC Fixing, AC Shifting</p>
                             <p className="card-text"> <del>৳ 4,000.00</del>&nbsp;&nbsp; <span className='money'>৳ 3,500.00</span></p>
                             <button  className="btn-color" onClick={()=>click(details14)}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={acnewInstall} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h6 className="card-title">AC Uninstallation 1 To 2Ton</h6>
+                            <p className='service-text' >AC uninstallation</p>
+                            <p className="card-text"> <del>৳ 1,800.00 </del>&nbsp;&nbsp; <span className='money'>৳ 1,500.00</span></p>
+                            <button  className="btn-color" onClick={()=>click(details15)}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={acnewInstall} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h6 className="card-title">AC Uninstallation 3 To 5Ton</h6>
+                            <p className='service-text' >AC uninstallation</p>
+                            <p className="card-text"> <del>৳ 2,200.00 </del>&nbsp;&nbsp; <span className='money'> ৳ 2,000.00</span></p>
+                            <button  className="btn-color" onClick={()=>click(details16)}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={water} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h6 className="card-title">AC Water Drop Solution 1 To 2 Ton</h6>
+                            <p className='service-text' >AC Water Leakage Solution</p>
+                            <p className="card-text"> <del>৳ 900.00 </del>&nbsp;&nbsp; <span className='money'>৳ 700.00</span></p>
+                            <button  className="btn-color" onClick={()=>click(details17)}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={water} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h6 className="card-title">AC Water Drop Solution 3 To 5 Ton</h6>
+                            <p className='service-text' >AC Water Leakage Solution</p>
+                            <p className="card-text"> <del>৳ 1,200.00 </del>&nbsp;&nbsp; <span className='money'>৳ 1,000.00</span></p>
+                            <button  className="btn-color" onClick={()=>click(details18)}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={acrefil} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h6 className="card-title">Gas Charging</h6>
+                            <p className='service-text' >AC Gas Recharge</p>
+                            <p className="card-text"> <del>৳ 2,500.00 </del>&nbsp;&nbsp; <span className='money'>৳ 1,795.00</span></p>
+                            <button  className="btn-color" onClick={()=>click(details19)}>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card-box' >
+                        <div className='p-2 pb-3'>
+                            <img src={micro} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                            <h6 className="card-title">Microwave Oven Fixing Service</h6>
+                            <p className='service-text' >Services, Oven Fixing</p>
+                            <p className="card-text"> <del>৳ 700.00 </del>&nbsp;&nbsp; <span className='money'>৳ 500.00</span></p>
+                            <button  className="btn-color" onClick={()=>click(details20)}>Details</button>
                             </div>
                         </div>
                     </div>
