@@ -1,7 +1,7 @@
 .Card-flex{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 @media screen and (max-width:578px) {
@@ -18,7 +18,10 @@
 .card-box{
     border: 2px solid gray;
     border-radius: 5px;
-  
+    transition: .3s ease;
+}
+.card-box:hover{
+   transform: scale(1.1);
 }
 .btn-color{
     padding: 6px 12px;
